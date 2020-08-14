@@ -8,7 +8,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './public/index.html'
+      template: './public/index.html',
+      favicon: './public/viridity_icon.png'
     }),
     new CopyPlugin({
       patterns: [
