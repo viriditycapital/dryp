@@ -1,0 +1,23 @@
+{
+  "name": "xtz",
+  "cup": "highball",
+  "ingredients": [
+    {
+      "item": "vodka",
+      "quantity": "1.5 oz"
+    },
+    {
+      "item": "blue curaçao",
+      "quantity": "1.5 oz"
+    },
+    {
+      "item": "white sambuca",
+      "quantity": "1.5 oz"
+    },
+    {
+      "item": "cream",
+      "quantity": "0.5 oz"
+    }
+  ]
+    
+}

@@ -1,0 +1,29 @@
+{
+  "name": "btc",
+  "cup": "beer glass",
+  "ingredients": [
+    {
+      "item": "bourbon",
+      "quantity": "2 oz"
+    },
+    {
+      "item": "lemon juice",
+      "quantity": "0.5 oz"
+    },
+    {
+      "item": "honey",
+      "quantity": "1 tsp"
+    },
+    {
+      "item": "bitters",
+      "quantity": "2 dashes"
+    },
+    {
+      "item": "lager beer",
+      "quantity": "24 oz"
+    }
+  ],
+  "garnish": [
+    "lemon twist"
+  ]
+}

@@ -1,2 +1,0 @@
-# dryp
-to the moon

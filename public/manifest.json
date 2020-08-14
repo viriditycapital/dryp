@@ -1,0 +1,12 @@
+{
+  "short_name": "dryp",
+  "name": "Crypto-themed drinks",
+  "icons": [
+    {
+      "src": "./viridity_icon.png",
+      "type": "image/png",
+      "sizes": "95x94"
+    }
+  ],
+  "start_url": "."
+}
