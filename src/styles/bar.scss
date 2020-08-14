@@ -1,0 +1,36 @@
+/**
+ * Bar component
+ */
+
+.bar_wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+
+  .bar_icon {
+    margin: 12px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+
+    img{
+      height: 60px;
+      width: 60px;
+
+      &:hover {
+        border-radius: 50px;
+        border: 2px solid white;
+      }
+    }
+  }
+}

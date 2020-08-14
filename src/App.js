@@ -19,9 +19,11 @@ class App extends React.Component {
     return (
       <div>
         <div className="header">
-
+          <span>
+            Drypto
+          </span>
         </div>
-        <Bar />
+        <Bar coins={this.state.coins}/>
         <Display />
       </div>
     );
