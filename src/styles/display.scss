@@ -1,0 +1,25 @@
+/**
+ * Main display with the drink and recipe
+ */
+
+.display_wrapper {
+  width: 100%;
+  margin-top: 24px;
+
+  display: flex;
+  flex-direction: row;
+
+  .display_left {
+    width: 45%;
+  }
+
+  .display_right {
+    width: 45%;
+
+    table {
+      td {
+        text-align: left;
+      }
+    }
+  }
+}

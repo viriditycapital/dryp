@@ -9,7 +9,8 @@ import eth_logo from '../logos/eth.png';
 import xtz_logo from '../logos/xtz.png';
 import ltc_logo from '../logos/ltc.png';
 
-let LOGOS = {
+// Logo sources
+const LOGOS = {
   btc: btc_logo,
   eth: eth_logo,
   xtz: xtz_logo,
@@ -23,7 +24,7 @@ class BarIcon extends React.Component {
 
   render () {
     return (
-      <div className="bar_icon">
+      <div className="bar_icon" onClick={this.props.onClick}>
         <img src={LOGOS[this.props.value]}/>
       </div>
     );
@@ -31,12 +32,18 @@ class BarIcon extends React.Component {
 }
 
 BarIcon.propTypes = {
-  value: PropTypes.string.isRequired
+  value: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
 };
 
 class Bar extends React.Component {
   constructor (props) {
     super(props);
+  }
+
+  handleClick (coin) {
+    // Go up to the App
+    this.props.onClick(coin);
   }
 
   render () {
@@ -45,7 +52,13 @@ class Bar extends React.Component {
         <div className="bar">
           {
             this.props.coins.map(
-              coin => (<BarIcon key={coin} value={coin}/>)
+              coin => (
+                <BarIcon 
+                  key={coin} 
+                  value={coin}
+                  onClick={() => this.handleClick(coin)}
+                />
+              )
             )
           }
         </div>
@@ -55,7 +68,8 @@ class Bar extends React.Component {
 }
 
 Bar.propTypes = {
-  coins: PropTypes.array.isRequired
+  coins: PropTypes.array.isRequired,
+  onClick: PropTypes.func.isRequired
 };
 
 export default Bar;

@@ -11,8 +11,15 @@ class App extends React.Component {
         'eth',
         'xtz',
         'ltc'
-      ]
+      ],
+      curr_coin: 'btc'
     };
+  }
+
+  handleClick (coin) {
+    this.setState({
+      curr_coin: coin
+    });
   }
 
   render () {
@@ -23,8 +30,8 @@ class App extends React.Component {
             Drypto
           </span>
         </div>
-        <Bar coins={this.state.coins}/>
-        <Display />
+        <Bar coins={this.state.coins} onClick={(coin) => this.handleClick(coin)}/>
+        <Display curr_coin={this.state.curr_coin}/>
       </div>
     );
   }
