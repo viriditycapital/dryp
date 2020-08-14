@@ -1,0 +1,26 @@
+{
+  "name": "ltc",
+  "cup": "martini glass",
+  "ingredients": [
+    {
+      "item": "gin",
+      "quantity": "2 oz"
+    },
+    {
+      "item": "lemon juice",
+      "quantity": "0.5 oz"
+    },
+    {
+      "item": "maraschino liqueur",
+      "quantity": "0.5 oz"
+    },
+    {
+      "item": "orange bitters",
+      "quantity": "0.5 oz"
+    }
+  ],
+  "garnish": [
+    "lemon twist",
+    "lychee fruit"
+  ]
+}

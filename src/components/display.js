@@ -5,13 +5,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import btc_recipe from '../drinks/btc.json';
+import eth_recipe from '../drinks/eth.json';
 import xtz_recipe from '../drinks/xtz.json';
+import ltc_recipe from '../drinks/ltc.json';
 
 const RECIPES = {
   btc: btc_recipe,
-  eth: xtz_recipe,
+  eth: eth_recipe,
   xtz: xtz_recipe,
-  ltc: xtz_recipe
+  ltc: ltc_recipe
 };
 
 class Display extends React.Component {

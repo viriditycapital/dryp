@@ -1,0 +1,21 @@
+{
+  "name": "eth",
+  "cup": "beer glass",
+  "ingredients": [
+    {
+      "item": "gin",
+      "quantity": "2 oz"
+    },
+    {
+      "item": "dry vermouth",
+      "quantity": "2 dashes"
+    },
+    {
+      "item": "blue curaçao",
+      "quantity": "2 dashes"
+    }
+  ],
+  "garnish": [
+    "lemon twist"
+  ]
+}
