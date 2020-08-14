@@ -24,8 +24,8 @@ class BarIcon extends React.Component {
 
   render () {
     return (
-      <div className="bar_icon" onClick={this.props.onClick}>
-        <img src={LOGOS[this.props.value]}/>
+      <div className='bar_icon' onClick={this.props.onClick}>
+        <img className={this.props.className} src={LOGOS[this.props.value]}/>
       </div>
     );
   }
@@ -33,7 +33,8 @@ class BarIcon extends React.Component {
 
 BarIcon.propTypes = {
   value: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string.isRequired
 };
 
 class Bar extends React.Component {
@@ -57,6 +58,7 @@ class Bar extends React.Component {
                   key={coin} 
                   value={coin}
                   onClick={() => this.handleClick(coin)}
+                  className={ (coin == this.props.curr_coin) ? 'selected' : ''}
                 />
               )
             )
@@ -69,6 +71,7 @@ class Bar extends React.Component {
 
 Bar.propTypes = {
   coins: PropTypes.array.isRequired,
+  curr_coin: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired
 };
 

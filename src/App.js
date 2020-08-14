@@ -30,7 +30,11 @@ class App extends React.Component {
             Drypto
           </span>
         </div>
-        <Bar coins={this.state.coins} onClick={(coin) => this.handleClick(coin)}/>
+        <Bar 
+          coins={this.state.coins}
+          curr_coin={this.state.curr_coin}
+          onClick={(coin) => this.handleClick(coin)}
+        />
         <Display curr_coin={this.state.curr_coin}/>
       </div>
     );

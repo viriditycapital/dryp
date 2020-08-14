@@ -11,10 +11,14 @@
 
   .display_left {
     width: 45%;
+    display: flex;
+    justify-content: center;
   }
 
   .display_right {
     width: 45%;
+    display: flex;
+    justify-content: center;
 
     table {
       td {
